@@ -6,28 +6,23 @@ public class z3 {
     private static String delete(String str, String substr) {
         StringBuffer sb = new StringBuffer("");
 
-        // "tekstusunusun"
-        //  01234567889
-
         boolean firstTime = true;
         for (int i = 0; i < str.length(); i++) {
             int end = i + substr.length();
 
-            if(end > str.length() - 1) {
-                end = str.length() - 1;
+            if(end > str.length()) {
+                end = str.length();
             }
 
+            System.out.format("%s\n", str.substring(i, end));
             if (!str.substring(i, end).equals(substr)) {
                 sb.append(str.charAt(i));
             } else {
                 if (firstTime) {
-                    System.out.println(i);
                     sb.append(str.charAt(i));
                     firstTime = false;
                 } else {
-                    System.out.println(i);
-                    i += substr.length();
-                    System.out.println(i);
+                    i += substr.length() - 1;
                 }
             }
         }

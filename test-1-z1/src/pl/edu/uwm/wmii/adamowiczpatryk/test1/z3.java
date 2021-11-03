@@ -3,7 +3,7 @@ package pl.edu.uwm.wmii.adamowiczpatryk.test1;
 import java.util.Scanner;
 
 public class z3 {
-    private static String delete(String str, String substr) {
+    public static String delete(String str, String substr) {
         StringBuffer sb = new StringBuffer("");
 
         boolean firstTime = true;
@@ -14,7 +14,6 @@ public class z3 {
                 end = str.length();
             }
 
-            System.out.format("%s\n", str.substring(i, end));
             if (!str.substring(i, end).equals(substr)) {
                 sb.append(str.charAt(i));
             } else {

@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class z1 {
 
     private static boolean isPrime(int n) {
-        if(n < 2) {
+        if (n < 2) {
             return false;
         }
 
-        for(int j = 2; j < n/2; j++) {
-            if(n%j == 0) {
+        for (int j = 2; j < n / 2; j++) {
+            if (n % j == 0) {
                 return false;
             }
         }
@@ -23,7 +23,7 @@ public class z1 {
 
 
         for (int i = 0; i < list.length; i++) {
-            if(isPrime(list[i])) {
+            if (isPrime(list[i])) {
                 _count++;
             }
         }

@@ -10,7 +10,7 @@ public class z3 {
         for (int i = 0; i < str.length(); i++) {
             int end = i + substr.length();
 
-            if(end > str.length()) {
+            if (end > str.length()) {
                 end = str.length();
             }
 

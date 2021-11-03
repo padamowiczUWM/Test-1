@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class z2 {
     private static int findMin(int[] tab) {
         int minEl = tab[0];
-        for(int i = 1; i < tab.length; i++) {
-            if(tab[i] < minEl) {
+        for (int i = 1; i < tab.length; i++) {
+            if (tab[i] < minEl) {
                 minEl = tab[i];
             }
         }
@@ -17,8 +17,8 @@ public class z2 {
 
     private static int valueCountInTab(int[] tab, int n) {
         int _count = 0;
-        for(int i = 0; i < tab.length; i++) {
-            if(tab[i] == n) {
+        for (int i = 0; i < tab.length; i++) {
+            if (tab[i] == n) {
                 _count++;
             }
         }
@@ -34,13 +34,13 @@ public class z2 {
 
         int[] tab = new int[n];
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             Random r = new Random();
 
             tab[i] = r.nextInt(50 + 50) - 50;
         }
 
-        int minValue =  findMin(tab);
+        int minValue = findMin(tab);
         System.out.format("Najmniejszy element: %d, występuje on %d razy.", minValue, valueCountInTab(tab, minValue));
     }
 }

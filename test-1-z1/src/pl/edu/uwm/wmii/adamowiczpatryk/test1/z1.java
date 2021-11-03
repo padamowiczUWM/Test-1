@@ -18,7 +18,7 @@ public class z1 {
         return true;
     }
 
-    private static int findPrimes(int[] list) {
+    public static int findPrimes(int[] list) {
         int _count = 0;
 
 
